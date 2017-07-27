@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" fx:id="aPane" prefHeight="570.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="othello.pkgfinal.FXMLDocumentController">
+    <children>
+      <GridPane fx:id="gPane" layoutX="51.0" layoutY="103.0" prefHeight="400.0" prefWidth="400.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="10.0" prefWidth="67.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="73.0" minWidth="10.0" prefWidth="67.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="74.0" minWidth="10.0" prefWidth="67.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="88.0" minWidth="10.0" prefWidth="67.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="97.0" minWidth="10.0" prefWidth="67.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.0" minWidth="10.0" prefWidth="67.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="67.0" minHeight="67.0" prefHeight="67.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="67.0" minHeight="67.0" prefHeight="67.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="67.0" minHeight="67.0" prefHeight="67.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="67.0" minHeight="67.0" prefHeight="67.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="77.0" minHeight="65.0" prefHeight="67.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="67.0" minHeight="57.0" prefHeight="65.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Label fx:id="player1" layoutX="487.0" layoutY="65.0" prefHeight="18.0" prefWidth="100.0" text="Player 1 Name" />
+      <Label fx:id="player2" layoutX="487.0" layoutY="146.0" prefHeight="18.0" prefWidth="100.0" text="Player 2 Name" />
+      <Label fx:id="p1points" layoutX="495.0" layoutY="94.0" prefHeight="18.0" prefWidth="73.0" />
+      <Label fx:id="p2points" layoutX="507.0" layoutY="180.0" prefHeight="18.0" prefWidth="73.0" />
+      <Label fx:id="messages" alignment="CENTER" layoutX="86.0" layoutY="528.0" prefHeight="18.0" prefWidth="482.0" />
+      <MenuBar fx:id="menu" layoutX="13.0" layoutY="14.0" prefHeight="29.0" prefWidth="73.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleStart" text="Start" />
+              <MenuItem mnemonicParsing="false" text="Reset" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+    </children>
+</AnchorPane>
